@@ -1,0 +1,51 @@
+body {
+  background-color: rgba(17, 107, 221, 0.6);
+}
+div#myModal {
+  margin: 13% 0% 0% 0%;
+  background-color: #ffffff;
+  height: 450px;
+}
+div#myModal-Admin {
+  margin: 13% 0% 0% 0%;
+  background-color: #ffffff;
+  height: 537px;
+}
+div.modal-content {
+  margin: 15% 0% 0% 0%;
+}
+div.modal-body,
+div.modal-header,
+div.modal-footer {
+  box-shadow: 0px 1px -1px 33px rgba(9, 9, 9, 0.6);
+  background-color: #727272;
+}
+a.btn-default {
+  color: #ffffff;
+  background-color: #0052ff;
+  border-color: #000000;
+}
+span.input-group-addon {
+  color: #ffffff;
+  background-color: #5c76c7;
+}
+span.glyphicon {
+  color: #ffffff;
+}
+div.well {
+  background: #757575;
+  margin: 5% 0% 0% 2%;
+}
+div.tab-pane {
+  color: #ffffff;
+}
+table.table-hover {
+  color: green;
+}
+table.table {
+  background-color: rgba(17, 107, 221, 0.6);
+  color: #ffffff;
+}
+ul.nav-tabs > li > a {
+  color: #000000;
+}

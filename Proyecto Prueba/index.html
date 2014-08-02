@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	
+
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<header>
+				<div class="modal  fade" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+
+								<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h1>
+										<img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Login
+									</h1>
+								</div>
+
+								<div class="modal-body">
+									<div class="col-lg-6">
+									<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="text" class="form-control" placeholder="User..." id="userLogin">
+								</div>
+								</div>
+								
+								
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input type="password" class="form-control" placeholder="Password..." id="passwordLogin">
+									<a href="" class="btn btn-default input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></a>
+									</div>
+								
+								</div>
+								<div class="modal-footer">
+									<a href="" type="button" class="btn btn-default" id="btnLogin">
+									<span class="glyphicon glyphicon-log-in"> </span> Join</a>
+
+									<a href="" type="button" class="btn btn-default">
+									<span class="glyphicon glyphicon-remove"> </span> Cancel</a>
+											</div>
+							</div>
+						</div>
+					</div>
+	</header>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/util.js"></script>
+		<script type="text/javascript">
+		addClick();
+		addUserAdmin();
+		$("#myModal").modal("show");
+	</script>
+</body>
+</html>
