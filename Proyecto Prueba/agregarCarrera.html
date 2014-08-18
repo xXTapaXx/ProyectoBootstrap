@@ -1,62 +1,79 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Agregar Carrera</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Carrera</title>
+    <!--Cargamos los css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+<!--Body de html-->
+
 <body>
-	
-	<div class="container">
-	<div class="well col-lg-12">
-		<div class="row-fluid">
-			<div class="col-lg-12">
-			<div class="page-header">
-				<h1><img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Perfiles</h1>
-			</div>
-			</div>
-		</div>
+    <!--Div de calse container de bootstrap-->
+    <div class="container">
+        <!--Div con clase de columna de bootstrap-->
+        <div class="well col-lg-12">
+            <!--Div rowFluid para responsive de bootstrap-->
+            <div class="row-fluid">
+                <!--Div con clase de columna de bootstrap-->
+                <div class="col-lg-12">
+                <!--Div para la titulo de la pagina-->
+                    <div class="page-header">
+                        <h1>
+                        <!--Imagen del logo de UTN-->
+                            <img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Perfiles</h1>
+                    </div>
+                </div>
+            </div>
+            <!--Div rowFluid para responsive de bootstrap-->
+            <div class="row-fluid">
+                <!--Div con clase de columna de bootstrap-->
+                <div class="col-lg-12">
+                    <form action="">
+                    <!--Div input Code-->
+                        <div class="input-group">
+                            <span class="input-group-addon">code</span>
+                            <input type="text" class="form-control" placeholder="code..." id="codeCarrer" autofocus>
+                        </div>
 
-		<div class="row-fluid">
-			<div class="col-lg-12">
-			<form action="">
-				<div class="input-group">
-					<span class="input-group-addon">code</span>
-					<input type="text" class="form-control" placeholder="code..." id="codeCarrer" autofocus>
-				</div>
+                        <br>
+                        <br>
+		<!--Div input Name-->
+                        <div class="input-group">
+                            <span class="input-group-addon">Name</span>
+                            <input type="text" class="form-control" placeholder="Name..." id="nameCarrer" required>
+                        </div>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <!--Div rowFluid para responsive de bootstrap-->
+            <div class="row-fluid">
+                <div class="btn-group btn-group-justified">
+                    <a href="" type="button" class="btn btn-default btn-lg btn-block" id="btnAddCarrer">Add</a>
 
-					<br><br>
+                </div>
 
-				<div class="input-group">
-					<span class="input-group-addon">Name</span>
-					<input type="text" class="form-control" placeholder="Name..." id="nameCarrer" required>
-					</div>
-				<br><br>
-			</form>		
-			</div>	
-		</div>
+                <br>
+                <div class="btn-group btn-group-justified">
+                    <a href="admin.html" type="button" class="btn btn-default btn-lg btn-block">Cancel</a>
 
-		<div class="row-fluid">				
-					<div class="btn-group btn-group-justified">
-						<a href="" type="button" class="btn btn-default btn-lg btn-block" id="btnAddCarrer">Add</a>
-						
-					</div>
-
-					<br>
-					<div class="btn-group btn-group-justified">
-					<a href="" type="button" class="btn btn-default btn-lg btn-block">Cancel</a>
-					
-					</div>
-				</div>
-	</div>
-	</div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/util.js"></script>
-		<script type="text/javascript">
-			addClick();
-		</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cargamos los Javascript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/util.js"></script>
+    <script type="text/javascript">
+    addClick();
+    </script>
 </body>
+
 </html>

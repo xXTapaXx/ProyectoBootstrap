@@ -24,13 +24,13 @@ div.modal-footer {
   background-color: #727272;
 }
 a.btn-default {
-  color: #ffffff;
-  background-color: #0052ff;
+  color: #000000;
+  background-color: #5c76c7;
   border-color: #000000;
 }
 a.btn-default:hover {
   color: #ffffff;
-  background-color: #0052ff;
+  background-color: #5c76c7;
   border-color: #000000;
   opacity: 0.7;
 }
@@ -48,8 +48,8 @@ div.well {
 div.tab-pane {
   color: #ffffff;
 }
-table.table-hover {
-  color: green;
+table.table-hover:hover {
+  color: #000000;
 }
 table.table {
   background-color: rgba(17, 107, 221, 0.6);

@@ -1,113 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Administrator</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/fileinput.css">
-				
-				<script src="js/util.js"></script>
-	
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+    <!--Cargamos los css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fileinput.css">
+
 </head>
+<!--Body de html-->
+
 <body class="adminBody">
-	<header>
-		<div class="container">
-		<div class="row-fluid">
-			<div class="page-header">
-			<h1><img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Perfiles</h1>
-				
-			</div>
-			
-			<div class="row-fluid">
-				<div class="col-lg-12">
-					<ul class="nav nav-tabs" >
-						<li class="active"><a data-toggle="tab" href="#home">home</a></li>
-						<li><a data-toggle="tab" href="#carrer" id="btnCarrer">carrer</a></li>
-						<li><a data-toggle="tab" href="#student" id="btnStudent">student</a></li>
-						<li><a data-toggle="tab" href="#user" id="btnUser">user</a></li>
-					</ul>
+    <header>
+        <!--Div de calse container de bootstrap-->
+        <div class="container">
+            <!--Div rowFluid para responsive de bootstrap-->
+            <div class="row-fluid">
+                <!--Div para la titulo de la pagina-->
+                <div class="page-header">
+                    <h1>
+                        <!--Imagen del logo de UTN-->
+                        <img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Perfiles</h1>
 
-					<div class="tab-content">
-						<div id="home" class="tab-pane active">
-							<h1>home</h1>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est asperiores dolorem deleniti porro illum et fuga nesciunt ipsum reprehenderit, nisi minima exercitationem eaque iste, aut ipsam molestias. Tempora, at!
-						</div>
+                </div>
+                <!--Div rowFluid para responsive de bootstrap-->
+                <div class="row-fluid">
+                    <!--Div con clase de columna de bootstrap-->
+                    <div class="col-lg-12">
+                        <!--Div nav para hacer tabs de menus de bootstrap-->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#chart_div">home</a>
+                            </li>
+                            <li><a data-toggle="tab" href="#carrer" id="btnCarrer">carrer</a>
+                            </li>
+                            <li><a data-toggle="tab" href="#student" id="btnStudent">student</a>
+                            </li>
+                            <li><a data-toggle="tab" href="#user" id="btnUser">user</a>
+                            </li>
+                        </ul>
+                        <!--Div tabContent para tener el contenido de los tabs pane-->
+                        <div class="tab-content">
+                            <div id="chart_div" class="tab-pane active">
 
-						<div id="carrer" class="tab-pane">
-							<table class="table  table-responsive"  id="tableCarrer">
-								
-							</table>
-						</div>
-						
-						<div id="student" class="tab-pane">
-							<table class="table  table-responsive"  id="tableStudent">
-								
-							</table>
-						</div>
-						<div id="user" class="tab-pane">
-							<table class="table  table-responsive"  id="tableUser">
-								
-							</table>
-						</div>
+                            </div>
+                            <!--Div tabPane donde se mostrara la tabla de carrera-->
+                            <div id="carrer" class="tab-pane">
 
-						<div class="rowfluid">
-							<div class="col-lg-12">
-						<div id="mensaje">
-							
-						</div>
-							</div>
-						</div>
+                                <!--Tabla de carrera-->
+                                <table class="table  table-responsive table-hover" id="tableCarrer">
 
-					</div>
-					
-				</div>
-			</div>
+                                </table>
+                            </div>
+                            <!--Div tabPane donde se mostrara la tabla de estudiante-->
+                            <div id="student" class="tab-pane">
+                                <!--Tabla de carrera-->
+                                <table class="table  table-responsive table-hover" id="tableStudent">
 
-			<div class="row-fluid">
-				<div class="col-lg-12">
-					<div class="modal  fade " id="myModal-Admin">
-						<div class="modal-dialog">
-							<div class="modal-content">
+                                </table>
+                            </div>
+                            <!--Div tabPane donde se mostrara la tabla de usuario-->
+                            <div id="user" class="tab-pane">
+                                <!--Tabla de carrera-->
+                                <table class="table  table-responsive table-hover" id="tableUser">
 
-								<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-									<h1>
-										<img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Perfiles
-									</h1>
-								</div>
+                                </table>
+                            </div>
+                            <!--Div rowFluid para responsive de bootstrap-->
+                            <div class="rowfluid">
+                                <!--Div con clase de columna de bootstrap-->
+                                <div class="col-lg-12">
+                                    <!--Div donde se desplegara las alertas de bootstrap-->
+                                    <div id="mensaje" class="">
 
-								<div class="modal-body" id="myModalBodyEdit">
-									
-								</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <!--Div rowFluid para responsive de bootstrap-->
+                    <div class="row-fluid">
+                        <!--Div con clase de columna de bootstrap-->
+                        <div class="col-lg-12">
+                            <!--Div class modal-->
+                            <div class="modal  fade " id="myModal-Admin">
+                                <!--Div class modalDialog-->
+                                <div class="modal-dialog">
+                                    <!--Div class modalContent tendra el contenido del modal-->
+                                    <div class="modal-content">
+                                        <!--Div class modalHeader este sera el header del modal-->
+                                        <div class="modal-header">
 
-								<div class="modal-footer">
-								
-									<button type="button" class="btn btn-primary" id="btnEdit">Edit</button>
-								
-								</div>
-							</div>
-						</div>
-					</div>
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h1>
 
-				</div>
-			</div>
-		</div>
-		</div>
-	</header>
-		
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-			<script src="js/fileinput.js"></script>
-			<script src="js/jquery.min.js"></script>
-			<script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
-			<script src="js/util.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script type="text/javascript">
-				loadCarrer();
-				loadStudents();
-				loadUser();
-			</script>
+                                                <img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Perfiles
+                                            </h1>
+                                        </div>
+                                        <!--Div class modalBody sera el cuerpo del modal-->
+                                        <div class="modal-body" id="myModalBodyEdit">
+
+                                        </div>
+                                        <!--Div class modalFooter es el footer del modal-->
+                                        <div class="modal-footer">
+
+                                            <button type="button" class="btn btn-primary" id="btnEdit">Edit</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </header>
+
+    <!--Cargamos los Javascript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="js/fileinput.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    LoadChart();
+    loadCarrer();
+    loadStudents();
+    loadUser();
+    </script>
 
 </body>
+
 </html>
