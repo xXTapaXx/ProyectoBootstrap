@@ -202,6 +202,8 @@ function editUser(dniUserEdit) {
 
             var users = JSON.parse(localStorage.getItem('users'));
 
+            
+
             for (var i = 0; i < users.length; i++) {
 
                 if (users[i].dniUser == dniUserEdit) {

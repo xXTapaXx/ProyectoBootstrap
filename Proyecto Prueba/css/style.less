@@ -1,5 +1,119 @@
+// Colores
+@black: rgba(0, 0, 0, 1);
+@red: red;
+@white: white;
+@body-Color: rgba(17, 107, 221, 0.6);
+@grays: rgb(114, 114, 114);
+//Opacity
+@opacityClose: 1;
+@opacityHover: 0.7;
+//Modal
+@modalMargin: 0% 0% 0% 0%;
+@modalMarginLogin: 12% 0% 0% 0%;
+@heightModal: 300px;
+@heightModalAdmin: 537px;
+@modalBodyLogin: 0px 1px -1px 33px rgba(9, 9, 9, .6);
+//Botones
+@btn-default:@white;
 
+@glyphicon: #2C6FD3;
+//Well
+@well: rgb(117, 117, 117);
+@wellMargin: 5% 0% 0% 2%;
+//Body
+ body {
+    background-color: @body-Color;
 
-div.container{
-	
+}
+body.adminBody {
+    background-color: @grays;
+
+}
+//Div
+div#myModal {
+    margin: @modalMarginLogin;
+
+background-color: @white;
+
+height: @heightModal;
+
+}
+div#myModal-Admin {
+    margin: @modalMargin;
+
+}
+div.modal-body, div.modal-header, div.modal-footer {
+    box-shadow: @modalBodyLogin;
+
+background-color: @grays;
+
+}
+div.well {
+    background: @well;
+
+margin: @wellMargin;
+
+}
+div.tab-pane {
+    color: @white;
+
+}
+//a
+a.btn-default {
+    color: @black;
+
+background-color: @glyphicon;
+
+border-color: @black;
+
+}
+a.btn-default:hover {
+    color: @white;
+
+background-color: @glyphicon;
+
+border-color: @black;
+
+opacity: @opacityHover;
+
+}
+a.close {
+    color: @black;
+
+opacity: @opacityClose;
+
+}
+//Span
+span.input-group-addon {
+    color: @white;
+
+background-color: @glyphicon;
+
+}
+span.glyphicon {
+    color: @white;
+
+}
+span.tabMenu {
+    color: @black;
+
+}
+span.glyphicon-off {
+    color: @red;
+
+}
+//Table
+table.table-hover:hover {
+    color: @black;
+}
+table.table {
+    background-color: @body-Color;
+
+color: @white;
+
+}
+//Nav-Tabs
+ul.nav-tabs>li>a {
+    color: @black;
+
 }

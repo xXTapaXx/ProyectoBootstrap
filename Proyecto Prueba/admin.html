@@ -8,7 +8,7 @@
     <title>Administrator</title>
     <!--Cargamos los css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fileinput.css">
 
 </head>
@@ -23,6 +23,8 @@
                 <!--Div para la titulo de la pagina-->
                 <div class="page-header">
                     <h1>
+                        <a href="index.html" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            <span class="glyphicon glyphicon-off"></span> Log Out</a>
                         <!--Imagen del logo de UTN-->
                         <img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Perfiles</h1>
 
@@ -33,13 +35,13 @@
                     <div class="col-lg-12">
                         <!--Div nav para hacer tabs de menus de bootstrap-->
                         <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#chart_div">home</a>
+                            <li class="active"><a data-toggle="tab" href="#chart_div"><span class="glyphicon glyphicon-home tabMenu"></span> home</a>
                             </li>
-                            <li><a data-toggle="tab" href="#carrer" id="btnCarrer">carrer</a>
+                            <li><a data-toggle="tab" href="#carrer" id="btnCarrer"><span class="glyphicon glyphicon-list tabMenu"></span> carrer</a>
                             </li>
-                            <li><a data-toggle="tab" href="#student" id="btnStudent">student</a>
+                            <li><a data-toggle="tab" href="#student" id="btnStudent"><span class="glyphicon glyphicon-book tabMenu"></span> student</a>
                             </li>
-                            <li><a data-toggle="tab" href="#user" id="btnUser">user</a>
+                            <li><a data-toggle="tab" href="#user" id="btnUser"><span class="glyphicon glyphicon-user tabMenu"></span> user</a>
                             </li>
                         </ul>
                         <!--Div tabContent para tener el contenido de los tabs pane-->
@@ -96,7 +98,7 @@
                                         <!--Div class modalHeader este sera el header del modal-->
                                         <div class="modal-header">
 
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <a type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
                                             <h1>
 
                                                 <img src="imagenes/UTN.png" alt="UTN" style="width:10%; height:5%; ">Perfiles
